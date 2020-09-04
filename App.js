@@ -1,10 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Counter from './src/Counter';
-import ClassComponent from './src/ClassComponent';
-import { Card1, Card2, Card3 } from './src/ConditionalRendering';
-import UserInput from './src/UserInput';
+import Counter from './components/Counter';
+import ClassComponent from './components/ClassComponent';
+import { Card1, Card2, Card3 } from './components/ConditionalRendering';
+import UserInput from './components/UserInput';
+import UseReducerComponent from './components/UseReducerComponent';
+import { UseEffect1, UseEffect2, UseEffect3 } from './components/UseEffectComponent';
+import UseRefComponent from './components/UseRefComponent';
+import CustomHook from './components/CustomHook';
 
 export default function App() {
   return (
@@ -17,6 +21,12 @@ export default function App() {
       <Card2 />
       <Card3 />
       <UserInput />
+      <UseReducerComponent />
+      <UseEffect1 />
+      <UseEffect2 />
+      <UseEffect3 />
+      <UseRefComponent />
+      <CustomHook />
     </View>
   );
 }
